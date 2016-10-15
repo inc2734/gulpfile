@@ -40,9 +40,6 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(jsDest));
 });
 
-var jsFiles = 'src/js/**/*.js',   //js file source
-    jsDest  = 'assets/js';        //js destination
-
 gulp.task('scripts', function() {
     return gulp.src(jsFiles)
         .pipe(concat('scripts.js'))
